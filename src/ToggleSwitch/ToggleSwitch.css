@@ -1,0 +1,47 @@
+.toggle-switch {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  background-color: #ccc;
+  border-radius: 17px;
+  cursor: pointer;
+}
+
+.switch.active {
+  background-color: #f32121;
+}
+
+.switch .text {
+  position: absolute;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.switch.active .text {
+  transform: translateX(26px);
+}
+
+.switch .text::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: inherit;
+}
+
+.state {
+  margin-top: 5px;
+}
